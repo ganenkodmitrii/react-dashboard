@@ -1,0 +1,398 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Gutters
+$gutter-size: 16px;
+
+// Grid
+$grid-xxl-size: 1320px;
+$grid-xl-size: 1200px;
+$grid-lg-size: 992px;
+$grid-md-size: 768px;
+$grid-sm-size: 576px;
+
+//Spacings
+//
+// Generate margin & padding mixins, define base spacing size
+$spacing-from: 0;
+$spacing-to: 30;
+
+$base-size: 32px;
+$base-size-sm: 24px;
+$base-size-lg: 40px;
+
+// Text colors
+$heading-color: #121634;
+$text-color: #494f7d;
+$text-color-secondary: #aaadc9;
+$text-color-light: #cfd1e1;
+
+// Background colors
+$background-content: #f8f8f8;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family: 'Roboto', sans-serif;
+$font-size-base: 14px;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.414; // augmented fourth
+$line-height-sm: 1.25; // major third
+$line-height-lg: 1.618; // golden ratio
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+$border-width: 1px;
+$border-color: $grey-200;
+$border-radius: 4px;
+$border-radius-sm: $border-radius;
+$border-radius-lg: $border-radius;
+
+// Transitions
+//
+// Set base time & default base transition
+$transition-base: all 0.3s ease-in-out;
+$transition-time: 0.2s;
+
+// Shadows
+//
+// Set box shadows
+$box-shadow: 0px 4px 8px rgba(18, 22, 52, 0.16);
+
+// Alerts
+//
+// Define alert padding & icon size
+$alert-padding: 20px 16px;
+$alert-icon-size: 20px;
+$alert-icon-margin: 10px;
+
+//Avatars
+//
+// Define avatar sizes & statuses background
+$avatar-size-small: 30px;
+$avatar-size-big: 60px;
+$avatar-font-small: 9px;
+$avatar-font-big: 13px;
+$avatar-description-color: $primary-color;
+$avatar-status-active: $success-color;
+$avatar-status-regular: $primary-color;
+$avatar-status-uanctive: $success-color;
+
+// Actions
+//
+// Customize tooltip, height & icon of actions
+$actions-tooltip-height: 250px;
+$actions-tooltip-min-width: 140px;
+$actions-tooltip-padding: 0;
+$actions-tooltip-title-font-size: 11px;
+$actions-tooltip-title-padding: 12.5px;
+$actions-tooltip-title-color: $text-color;
+$actions-tooltip-item-font-size: 12px;
+$actions-tooltip-item-padding: $actions-tooltip-title-padding;
+$actions-border: 1px solid $border-color;
+$actions-height: 36px;
+$actions-icon-color: $primary-color;
+$actions-icon-hover-color: $white;
+
+// Badges
+//
+// Customize size, padding & colors of badge
+$badge-size: 20px;
+$badge-min-size: 30px;
+$badge-border-radius: 100%;
+$badge-font-size: 14px;
+$badge-font-weight: 500;
+$badge-padding: 0;
+$badge-text-padding: 0 5px;
+$badge-text-border-radius: $border-radius;
+$badge-transform: translate3d(50%, -50%, 0);
+
+$badge-regular-bg-color: $white;
+$badge-success-bg-color: $success-color;
+$badge-info-bg-color: $info-color;
+$badge-warning-bg-color: $warning-color;
+$badge-danger-bg-color: $danger-color;
+
+// Card
+//
+// Style cards elements.
+$details-card-padding-size: $gutter-size;
+$details-card-border: 1px solid;
+$details-card-border-color: $border-color;
+$details-card-border-radius: $border-radius;
+$details-card-header-icon-size: $base-size * 2;
+$details-card-header-icon-margin-right: $details-card-padding-size;
+$details-card-header-border-bottom: 1px solid;
+$details-card-header-border-bottom-color: $border-color;
+$details-card-footer-border-top: 1px solid;
+$details-card-footer-border-top-color: $border-color;
+
+// Card
+$card-padding-x: 20px;
+$card-padding-y: 15px;
+$card-padding-x-sm: 15px;
+$card-padding-y-sm: 10px;
+$card-padding-x-lg: 20px;
+$card-padding-y-lg: 20px;
+
+$card-border-radius: $border-radius;
+$card-border-color: $border-color;
+$card-bordered-color: $primary-color;
+$card-header-bg-color: $white;
+$card-body-bg-color: $grey-100;
+$card-footer-bg-color: $white;
+$card-box-shadow: $box-shadow;
+
+// Collapse
+$collapse-padding-x: 20px;
+$collapse-padding-y: 15px;
+$collapse-padding-x-sm: 15px;
+$collapse-padding-y-sm: 10px;
+$collapse-padding-x-lg: 20px;
+$collapse-padding-y-lg: 20px;
+
+$collapse-border-radius: $border-radius;
+$collapse-border-color: $border-color;
+$collapse-bordered-color: $primary-color;
+$collapse-header-bg-color: $white;
+$collapse-body-bg-color: $grey-100;
+$collapse-group-box-shadow: $box-shadow;
+
+// Links
+//
+// Style anchor elements.
+$link-color: $primary-color;
+$link-decoration: none;
+$link-shade-percentage: 20%;
+$link-hover-color: $primary-600;
+$link-hover-decoration: none;
+
+// ListGroup
+//
+// Style list group items
+$list-group-background-color: $white;
+$list-group-border: 1px solid $border-color;
+$list-group-item-padding: $gutter-size;
+$list-group-item-border-bottom: 1px solid $border-color;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+// button medium height = 32px
+$btn-padding-y: 5px;
+$btn-padding-x: 11px;
+
+$btn-font-family: $font-family;
+$btn-font-weight: $font-weight-medium;
+$btn-font-size: $font-size-base;
+$btn-line-height: $line-height-base;
+
+// button small height = 24px
+$btn-padding-y-sm: 3px;
+$btn-padding-x-sm: 7px;
+$btn-font-size-sm: $font-size-sm;
+$btn-font-weight-sm: $font-weight-medium;
+$btn-line-height-sm: $line-height-sm;
+
+// button large height = 40px
+$btn-padding-y-lg: 9px;
+$btn-padding-x-lg: 19px;
+$btn-font-size-lg: $font-size-base;
+$btn-font-weight-lg: $font-weight-bold;
+$btn-line-height-lg: $line-height-base;
+
+$btn-border-width: $border-width;
+
+$btn-link-color: $link-color;
+$btn-link-hover-color: $link-hover-color;
+$btn-link-disabled-color: $grey-500;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: $border-radius;
+$btn-border-radius-sm: $border-radius-sm;
+$btn-border-radius-lg: $border-radius-lg;
+
+$btn-type-ghost-border-color: $primary-color;
+$btn-type-ghost-background: transparent;
+$btn-type-ghost-color: $primary-color;
+$btn-type-ghost-hover-color: $white;
+$btn-type-ghost-hover-background: $primary-color;
+$btn-type-ghost-hover-border-color: $primary-color;
+$btn-type-ghost-active-color: $white;
+$btn-type-ghost-active-background: $primary-600;
+$btn-type-ghost-active-border-color: $primary-600;
+$btn-type-ghost-icon-color: $primary-color;
+
+// Layout
+//
+// Customize layout top bar & toggler & avatar
+$layout-top-bar-height: 58px;
+$layout-top-bar-border-color: 1px solid $border-color;
+$layout-top-bar-background: $white;
+
+$layout-top-bar-side-left-magin-left: $gutter-size;
+$layout-top-bar-side-right-magin-left: $gutter-size;
+
+$layout-top-bar-avatar-background: $primary-color;
+$layout-top-bar-avatar-color: $white;
+$layout-top-bar-avatar-alt-color: $text-color;
+$layout-top-bar-avatar-icon-btn-color: $primary-color;
+$layout-top-bar-avatar-icon-btn-size: 32px;
+$layout-top-bar-avatar-icon-btn-padding: 0;
+
+$layout-top-bar-toggler-color: $primary-color;
+$layout-top-bar-toggler-hover-color: $primary-color;
+$layout-top-bar-toggler-border-color: $border-color;
+
+$layout-content-background: $white;
+
+$layout-footer-background: transparent;
+$layout-footer-height: $layout-top-bar-height;
+$layout-footer-fixed-border: 1px solid $border-color;
+
+// Label
+//
+// Define font size, color, border of labels
+$label-font-size: 12px;
+$label-height: 24px;
+$label-padding: 0 12px;
+$label-color: $text-color;
+$label-border: 1px solid;
+$label-border-radius: $border-radius;
+$label-circle-border-radius: $label-height / 2;
+
+// Sidebar
+//
+// Define logo & sidebar width, background, sidebar item
+$sidebar-width: 192px;
+$sidebar-border: 1px solid $border-color;
+$sidebar-background: $white;
+$sidebar-bottom-background: $white;
+
+$sidebar-item-text-color: $text-color;
+$sidebar-item-hover-background: $primary-color;
+$sidebar-item-hover-color: $white;
+$sidebar-logo-width: $sidebar-width - $gutter-size * 3;
+
+// Table
+//
+// Customize thead, tbody of table
+$table-border: 1px solid $border-color;
+$table-border-radius: $border-radius;
+$table-box-shadow: none;
+$table-body-cell-border: $table-border;
+$table-body-cell-odd-background: $background-content;
+$table-body-cell-hover-background: $grey-100;
+$table-body-cell-text-align: left;
+$table-body-cell-justify-content: $table-body-cell-text-align;
+$table-body-mobile-cell-border: $table-border;
+$table-head-font-weight: 500;
+$table-body-font-size: 10px;
+$table-head-cell-text-align: left;
+$table-head-font-size: 13px;
+$table-head-background: $white;
+$table-head-cell-border: $table-border;
+$table-head-cell-bottom-border: 1px solid $primary-color;
+$table-sub-cell-border: $table-border;
+$table-font-size: $font-size-base;
+$table-filter-active-color: $text-color-secondary;
+
+// SortBy
+//
+// Customize height & icon of sortBy
+$sort-by-height: 36px;
+$sort-by-tooltip-height: 250px;
+$sort-by-icon-color: $primary-color;
+$sort-by-icon-hover-color: $white;
+$sort-by-text-color: $text-color;
+$sort-by-text-hover-color: $white;
+
+// Scrollbar
+//
+// Define base size & colors of scrollbar
+$scrollbar-size: $gutter-size / 2;
+$scrollbar-track-background-color: $background-content;
+$scrollbar-thumb-background-color: $border-color;
+$scrollbar-thumb-hover-background-color: $primary-color;
+
+// Icon
+$icon-svg-color: $primary-color;
+
+// Tabs
+$tab-item-margin: 0 30px 0 0;
+$tab-item-padding: 20px 0;
+$tab-border: none;
+$tab-border-bottom: 1px solid #111;
+$tab-item-border-bottom-active: 2px solid $primary-color;
+$tab-item-disabled-color: $normal-color;
+$tab-content-padding: 10px;
+
+// Form inputs
+//
+// Define base size & colors of scrollbar
+//
+// Form fields
+$field-margin-bottom: 15px;
+
+$field-label-color: $text-color;
+$field-label-font-size: 12px;
+$field-label-font-weight: 400;
+
+$field-extra-color: $text-color-secondary;
+
+// Input
+$input-padding-y: 6px;
+$input-padding-x: 8px;
+
+$input-padding-y-sm: 4px;
+$input-padding-x-sm: 6px;
+
+$input-padding-y-lg: 10px;
+$input-padding-x-lg: 10px;
+
+// Select
+$select-padding-y: $input-padding-y;
+$select-padding-x: $input-padding-x;
+
+$select-padding-y-sm: $input-padding-y-sm;
+$select-padding-x-sm: $input-padding-x-sm;
+
+$select-padding-y-lg: $input-padding-y-lg;
+$select-padding-x-lg: $input-padding-x-lg;
+
+// Calendar
+$calendar-padding-y: $input-padding-y;
+$calendar-padding-x: $input-padding-x;
+
+$calendar-padding-y-sm: $input-padding-y-sm;
+$calendar-padding-x-sm: $input-padding-x-sm;
+
+$calendar-padding-y-lg: $input-padding-y-lg;
+$calendar-padding-x-lg: $input-padding-x-lg;
+
+// Notify
+$notify-box-shadow: $box-shadow;
+$notify-width: auto;
+$notify-color: $white;
+$notify-padding: $gutter-size;
+$notify-border-radius: $border-radius;
