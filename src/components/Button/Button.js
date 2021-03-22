@@ -1,8 +1,19 @@
 import { Button as Btn } from '@ebs-integrator/react-ebs-ui';
+import React from 'react';
 
-const Button = () => {
+interface StylesBtnProps {
+  type: 'text' | 'primary' | 'fill' | 'ghost' | 'dark' | 'light';
+  size: 'small' | 'medium' | 'large';
+  className: string | undefined;
+}
+// "primary"
+const Button: React.FC<StylesBtnProps> = ({ className, type, size }) => {
+  const sayHay = () => {
+    alert('coco');
+  };
+
   return (
-    <Btn className="mr-15" type="primary" size="large">
+    <Btn onClick={sayHay} className={className} type={type} size={size}>
       click me
     </Btn>
   );
