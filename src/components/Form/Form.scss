@@ -1,0 +1,133 @@
+.form {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 50%;
+    padding: 40px;
+  }
+  display: block;
+  height: 100%;
+  max-height: 100vh;
+  width: 30%;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+.form-title {
+  margin-bottom: 30px;
+  color: $grey-900;
+  font-size: 40px;
+}
+
+.greeting {
+  display: block;
+}
+
+.form-text {
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: $grey-700;
+}
+.exemple {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #dbf9fd;
+  border-radius: 10px;
+  position: relative;
+}
+
+.example-question {
+  width: 14px;
+  height: 14px;
+  color: $grey-700;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.exemple-text {
+  color: $grey-700;
+}
+
+.exemple-email {
+  color: $grey-700;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+// не работают стили на checkbox
+// .form__checkbox {
+//   color: $grey-700;
+//   font-size: 15px;
+// }
+.text__box {
+  padding: 40px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.text__box-link {
+  margin-left: 5px;
+  color: $primary-color;
+}
+
+.textwithline {
+  display: flex;
+  align-items: center;
+  // margin-top: 20px;
+  margin-bottom: 40px;
+  color: $grey-700;
+}
+
+.textwithline::before {
+  content: '';
+  display: inline-block;
+  width: 180px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: $grey-700;
+}
+
+.textwithline::after {
+  content: '';
+  display: inline-block;
+  width: 180px;
+  height: 1px;
+  margin-left: 20px;
+
+  background-color: $grey-700;
+}
+
+.icons__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icons__list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 33px;
+  height: 33px;
+  color: $white;
+}
+.fill-facebook {
+  background-color: #4267b2;
+}
+.fill-twitter {
+  background-color: #1da1f2;
+}
+.fill-mail {
+  background-color: #e73831;
+}
+.fill-github {
+  background-color: #545556;
+}
+
+.fill-icon {
+  color: $white;
+}

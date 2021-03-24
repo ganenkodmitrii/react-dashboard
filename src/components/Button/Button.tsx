@@ -8,12 +8,10 @@ interface StylesBtnProps {
 }
 // "primary"
 const Button: React.FC<StylesBtnProps> = ({ className, type, size }) => {
-  const sayHay = () => {
-    alert('coco');
-  };
+
 
   return (
-    <Btn onClick={sayHay} className={className} type={type} size={size}>
+    <Btn className={className} type={type} size={size}>
       click me
     </Btn>
   );
