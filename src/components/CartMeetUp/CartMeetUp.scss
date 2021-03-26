@@ -1,0 +1,93 @@
+.cart-meetup {
+  height: 450px;
+}
+.box-meetup {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $primary-300;
+}
+.meetup {
+  height: 150px;
+  width: 300px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.nodebook-box {
+  padding: 1.5rem;
+}
+.notebook-info {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.notebook-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: 1px solid #d8d6de;
+  padding-right: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.notebook-title {
+  margin-bottom: 0.25rem;
+}
+
+.notebook-calendar,
+.notebook-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.notebook-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: $primary-300;
+}
+.calendar {
+  width: 18px;
+  height: 18px;
+}
+
+.notebook-pic {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.box-pic {
+  margin-left: calc(-4.95px);
+  margin-right: calc(-4.95px);
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 1px solid $white;
+}
+
+.avatar-pic {
+  border-radius: inherit;
+  cursor: pointer;
+}
+.avatar-pic:focus,
+.avatar-pic:hover {
+  transition: 300ms;
+  margin-bottom: 5px;
+  transform: scale(1.3);
+}
+
+.number-pic {
+  margin-left: 1rem;
+}

@@ -1,0 +1,57 @@
+.box-congratulation {
+  height: 210px;
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+.card__congratulations {
+  color: $white;
+  background: linear-gradient(
+    86deg,
+    rgba(57, 132, 41, 1) 0%,
+    rgba(124, 196, 94, 1) 35%,
+    rgba(194, 239, 160, 1) 100%
+  );
+  text-align: center;
+}
+
+.flag1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flag2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flagLock-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.flagLock-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: $white;
+  background-color: $primary-color;
+}
+
+.flagLock {
+  color: $white;
+  width: 33px;
+  height: 33px;
+}
+
+.card__congratulations-title {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
