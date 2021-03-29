@@ -2,16 +2,15 @@ import {
   Layout as Container,
   InputSearch,
   Sidebar,
-  Icon,
-} from '@ebs-integrator/react-ebs-ui';
-import { Route } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import HomeView from '../../features/home/HomeView/HomeView';
-import ChatView from '../../features/home/ChatView/ChatView';
 
-const Layout = () => {
+} from '@ebs-integrator/react-ebs-ui';
+
+
+
+const Layout: React.FC = ({ children }) => {
   return (
-    <Container>
+
+    <Container >
       <Container.Topbar>
         <Container.Topbar.Toggler />
 
@@ -26,35 +25,25 @@ const Layout = () => {
 
       <Sidebar>
         <Sidebar.TopMenu>
-          <NavLink to="/" exact>
-            <Sidebar.Item
-              label="home"
-              prefix={<Icon type="search" />}
-              text="Top parent tab"
-            />
-          </NavLink>
-          <NavLink to="/chat" exact>
-            <Sidebar.Item
-              label="chat"
-              prefix={<Icon type="search" />}
-              text="Top parent tab"
-            />
-          </NavLink>
+
         </Sidebar.TopMenu>
         Sidebar text
       </Sidebar>
 
       <Container.Content>
-        <Route path="/" exact>
-          <HomeView />
-        </Route>
-        <Route path="/chat" exact>
-          <ChatView />
-        </Route>
-        Content text
+        {children}
       </Container.Content>
+
       <Container.Footer />
+
     </Container>
+
+
   );
 };
 export default Layout;
+
+
+
+
+

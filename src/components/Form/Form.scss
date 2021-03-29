@@ -63,6 +63,9 @@
 //   font-size: 15px;
 // }
 .text__box {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   padding: 40px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -71,12 +74,16 @@
   margin-left: 5px;
   color: $primary-color;
 }
-
+.line-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
 .textwithline {
   display: flex;
   align-items: center;
-  // margin-top: 20px;
-  margin-bottom: 40px;
+
   color: $grey-700;
 }
 

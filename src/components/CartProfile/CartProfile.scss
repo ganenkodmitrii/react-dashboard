@@ -1,0 +1,76 @@
+.cart-profile {
+  height: 450px;
+}
+.handWithClock {
+  height: 150px;
+  width: 100%;
+}
+
+.box-statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2.3rem 1.5rem 2.3rem;
+  align-items: center;
+  position: relative;
+}
+
+.user-statistics {
+  margin-top: 1.15rem;
+  text-align: center;
+}
+
+// .box-user {
+// }
+
+.box-user-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 114px;
+  width: 114px;
+  position: absolute;
+  top: -4rem;
+  //   margin-bottom: 1.15rem;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+}
+.user-foto {
+  height: 100px;
+  width: 100px;
+  border-radius: inherit;
+}
+
+.user-title {
+  margin-bottom: 0.5rem;
+}
+.user-country {
+  margin-bottom: 0.5rem;
+}
+
+.box-level {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.358rem;
+  color: $primary-color;
+  background-color: $primary-300;
+}
+
+.hline {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 2px;
+  background: #f6f6f6;
+}
+
+.numeral-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}

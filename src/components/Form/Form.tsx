@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { question, facebook, github, mail, twitter } from '../../resources/index';
 import {
   Form as Box,
@@ -10,6 +11,8 @@ import {
 } from '@ebs-integrator/react-ebs-ui';
 
 const Form = () => {
+
+
   return (
     <div className="form">
       <Box>
@@ -46,13 +49,21 @@ const Form = () => {
         <Box.Field>
           <Checkbox text="Remember me" />
         </Box.Field>
+        <NavLink to="/dashboard">
+          <Button className="full-width" type="primary">
+            Sign in
+          </Button>
+        </NavLink>
 
-        <Button className="full-width" type="primary">Sign in</Button>
         <div className="text__box">
           <p className="text__box-info">New on our platform?<a className="text__box-link" href="#example">Create an account</a></p>
+
         </div>
 
-        <p className="textwithline">or</p>
+        <div className="line-box">
+          <p className="textwithline">or</p>
+
+        </div>
 
 
         <Space className="icons__list" justify='center' >
