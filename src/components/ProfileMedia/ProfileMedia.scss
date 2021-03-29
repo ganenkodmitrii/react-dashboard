@@ -1,0 +1,13 @@
+.box-profile-media {
+  display: flex;
+  align-items: flex-start;
+}
+.media-pic {
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+.avatar-media {
+  border-radius: inherit;
+}
