@@ -1,0 +1,25 @@
+.card-timeline {
+  padding: 1.5rem;
+  height: 505px;
+}
+
+.timeline-list {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  list-style-type: none;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.timelineitem-text {
+  margin-bottom: 1rem;
+}
