@@ -11,18 +11,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 2.3rem 1.5rem 2.3rem;
+  padding: rem(70px 32px 20px 32px);
   align-items: center;
   position: relative;
 }
-
-.user-statistics {
-  margin-top: 1.15rem;
-  text-align: center;
-}
-
-// .box-user {
-// }
 
 .box-user-foto {
   display: flex;
@@ -31,8 +23,7 @@
   height: 114px;
   width: 114px;
   position: absolute;
-  top: -4rem;
-  //   margin-bottom: 1.15rem;
+  top: rem(-50px);
   border-radius: 50%;
   background-color: #f6f6f6;
 }
@@ -42,27 +33,32 @@
   border-radius: inherit;
 }
 
+.user-statistics {
+  margin-top: rem(16px);
+  text-align: center;
+}
+
 .user-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(7px);
 }
 .user-country {
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(7px);
 }
 
 .box-level {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  padding: 0.2rem 0.3rem;
-  border-radius: 0.358rem;
+  margin-left: rem(40px);
+  margin-right: rem(40px);
+  margin-top: rem(10px);
+  margin-bottom: rem(10px);
+  padding: rem(4px 5px);
+  border-radius: rem(5px);
   color: $primary-color;
   background-color: $primary-300;
 }
 
 .hline {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: rem(14px);
+  margin-bottom: rem(21px);
   width: 100%;
   height: 2px;
   background: #f6f6f6;

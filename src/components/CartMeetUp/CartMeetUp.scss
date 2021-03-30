@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   height: 150px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: rem(5px);
+  border-top-right-radius: rem(5px);
   background-color: $primary-300;
 }
 .meetup {
@@ -19,11 +19,11 @@
 }
 
 .nodebook-box {
-  padding: 1.5rem;
+  padding: rem(20px);
 }
 .notebook-info {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: rem(32px);
 }
 
 .notebook-date {
@@ -32,19 +32,19 @@
   align-items: center;
   justify-content: flex-end;
   border-right: 1px solid #d8d6de;
-  padding-right: 1.3rem;
-  margin-right: 1.3rem;
+  padding-right: rem(18px);
+  margin-right: rem(18px);
 }
 
 .notebook-title {
-  margin-bottom: 0.25rem;
+  margin-bottom: rem(4px);
 }
 
 .notebook-calendar,
 .notebook-location {
   display: flex;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: rem(18px);
 }
 
 .notebook-icon {
@@ -53,7 +53,7 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  margin-right: 10px;
+  margin-right: rem(10px);
   border-radius: 5px;
   background-color: $primary-300;
 }
@@ -65,9 +65,9 @@
 .notebook-pic {
   display: flex;
   align-items: center;
-  padding-top: 0.5rem;
+  padding-top: rem(10px);
 }
 
 .number-pic {
-  margin-left: 1rem;
+  margin-left: rem(14px);
 }

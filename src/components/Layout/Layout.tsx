@@ -1,16 +1,8 @@
-import {
-  Layout as Container,
-  InputSearch,
-  Sidebar,
-
-} from '@ebs-integrator/react-ebs-ui';
-
-
+import { Layout as Container, InputSearch, Sidebar } from '@ebs-integrator/react-ebs-ui';
 
 const Layout: React.FC = ({ children }) => {
   return (
-
-    <Container >
+    <Container>
       <Container.Topbar>
         <Container.Topbar.Toggler />
 
@@ -24,26 +16,14 @@ const Layout: React.FC = ({ children }) => {
       </Container.Topbar>
 
       <Sidebar>
-        <Sidebar.TopMenu>
-
-        </Sidebar.TopMenu>
+        <Sidebar.TopMenu></Sidebar.TopMenu>
         Sidebar text
       </Sidebar>
 
-      <Container.Content>
-        {children}
-      </Container.Content>
+      <Container.Content>{children}</Container.Content>
 
       <Container.Footer />
-
     </Container>
-
-
   );
 };
 export default Layout;
-
-
-
-
-

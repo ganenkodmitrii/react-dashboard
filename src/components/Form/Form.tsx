@@ -1,27 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { question, facebook, github, mail, twitter } from '../../resources/index';
-import {
-  Form as Box,
-  Icon,
-  Input,
-  Checkbox,
-  Button,
-  Space
-} from '@ebs-integrator/react-ebs-ui';
+import { Form as Box, Icon, Input, Checkbox, Button, Space } from '@ebs-integrator/react-ebs-ui';
 
 const Form = () => {
-
-
   return (
     <div className="form">
       <Box>
         <h1 className="form-title">
           Welcome to ...!<span className="greeting">👋</span>
         </h1>
-        <p className="form-text">
-          Please sign-in to your account and start the adventure
-        </p>
+        <p className="form-text">Please sign-in to your account and start the adventure</p>
         <div className="exemple">
           <Icon className="example-question" component={question} />
           <p className="exemple-text">
@@ -38,13 +27,9 @@ const Form = () => {
           <Input type="email" placeholder="admin@demo.com" />
         </Box.Field>
 
-        <Box.Field
-          name="Password"
-          label="Password"
-        >
+        <Box.Field name="Password" label="Password">
           <Input suffix={<Icon type="eye" />} type="text" placeholder="1234" />
         </Box.Field>
-
 
         <Box.Field>
           <Checkbox text="Remember me" />
@@ -56,17 +41,19 @@ const Form = () => {
         </NavLink>
 
         <div className="text__box">
-          <p className="text__box-info">New on our platform?<a className="text__box-link" href="#example">Create an account</a></p>
-
+          <p className="text__box-info">
+            New on our platform?
+            <a className="text__box-link" href="#example">
+              Create an account
+            </a>
+          </p>
         </div>
 
         <div className="line-box">
           <p className="textwithline">or</p>
-
         </div>
 
-
-        <Space className="icons__list" justify='center' >
+        <Space className="icons__list" justify="center">
           <a className="icons__list-link fill-facebook" href="#example">
             <Icon className="fill-icon" component={facebook} />
           </a>
@@ -80,9 +67,7 @@ const Form = () => {
             <Icon className="fill-icon" component={github} />
           </a>
         </Space>
-
       </Box>
-
     </div>
   );
 };

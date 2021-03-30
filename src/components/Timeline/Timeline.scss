@@ -1,6 +1,6 @@
 .card-timeline {
-  padding: 1.5rem;
-  height: 505px;
+  padding: rem(21px);
+  height: 515px;
 }
 
 .timeline-list {
@@ -9,17 +9,44 @@
 }
 
 .timeline-item {
+  margin-left: rem(5px);
+  padding-left: rem(28px);
+  border-left: 1px solid #d8d6de;
   list-style-type: none;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  padding-bottom: rem(28px);
+}
+
+.timelile-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  position: absolute;
+  left: -6px;
+  // background-color: type;
+}
+
+.timelile-point::before {
+  content: '';
+  z-index: 1;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: rgba(115, 103, 240, 0.12);
 }
 
 .box-title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(7px);
 }
 
 .timelineitem-text {
-  margin-bottom: 1rem;
+  margin-bottom: rem(14px);
 }

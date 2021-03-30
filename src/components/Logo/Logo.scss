@@ -1,9 +1,20 @@
-.logoBox {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+//$until - до
+// $from - от
 
+// @media screen and (max-width: 767px) {
+//   .logoBox {
+//     display: none;
+//   }
+// }
+
+.logoBox {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+@include mq($until: tablet) {
+  .logoBox {
+    display: none;
+  }
 }

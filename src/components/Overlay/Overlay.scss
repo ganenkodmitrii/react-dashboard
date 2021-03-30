@@ -1,11 +1,7 @@
-.overlay {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 50%;
-  }
+//$until - до
+// $from - от
 
+.overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,9 +10,59 @@
 
   background-color: $accent-3-900;
 }
+
 .hero {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    font-size: 300px;
-  }
   font-size: 500px;
 }
+@include mq($until: tablet) {
+  .overlay {
+    display: none;
+  }
+}
+
+@include mq($from: tablet, $until: desktop) {
+  .overlay {
+    width: 50%;
+  }
+  .hero {
+    font-size: 300px;
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   .overlay {
+//     display: none;
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1200px) {
+//   .overlay {
+//     width: 50%;
+//   }
+//   .hero {
+//     font-size: 300px;
+//   }
+// }
+
+// .overlay {
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1200px) {
+//     width: 50%;
+//   }
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   width: 70%;
+
+//   background-color: $accent-3-900;
+// }
+// .hero {
+//   @media screen and (min-width: 768px) and (max-width: 1200px) {
+//     font-size: 300px;
+//   }
+//   font-size: 500px;
+// }
