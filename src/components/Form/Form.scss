@@ -36,7 +36,7 @@
 .form-title {
   margin-bottom: rem(30px);
   color: $grey-900;
-  font-size: 40px;
+  font-size: rem(40px);
 }
 
 .greeting {
@@ -45,24 +45,24 @@
 
 .form-text {
   margin-bottom: rem(30px);
-  font-size: 15px;
+  font-size: rem(15px);
   color: $grey-700;
 }
 .exemple {
   margin-bottom: rem(30px);
   padding: rem(15px);
   background-color: #dbf9fd;
-  border-radius: 10px;
+  border-radius: rem(10px);
   position: relative;
 }
 
 .example-question {
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   color: $grey-700;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: rem(15px);
+  right: rem(10px);
 }
 
 .exemple-text {
@@ -72,7 +72,7 @@
 .exemple-email {
   color: $grey-700;
   margin-left: rem(5px);
-  font-weight: 400;
+  font-weight: rem(400);
 }
 
 // не работают стили на checkbox
@@ -105,9 +105,9 @@
 .textwithline::before {
   content: '';
   display: inline-block;
-  width: 180px;
-  height: 1px;
-  margin-right: 20px;
+  width: rem(180px);
+  height: rem(1px);
+  margin-right: rem(20px);
 
   background-color: $grey-700;
 }
@@ -115,9 +115,9 @@
 .textwithline::after {
   content: '';
   display: inline-block;
-  width: 180px;
-  height: 1px;
-  margin-left: 20px;
+  width: rem(180px);
+  height: rem(1px);
+  margin-left: rem(20px);
 
   background-color: $grey-700;
 }
@@ -132,9 +132,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  width: 33px;
-  height: 33px;
+  border-radius: rem(5px);
+  width: rem(33px);
+  height: rem(33px);
   color: $white;
 }
 .fill-facebook {

@@ -22,6 +22,3 @@ const Congrats = () => {
   );
 };
 export default Congrats;
-
-// padding: 5rem 2.3rem 1.5rem 2.3rem;
-// padding: rem(5px 20px 5px 20px)

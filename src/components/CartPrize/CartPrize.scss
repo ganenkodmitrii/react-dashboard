@@ -3,11 +3,11 @@
 }
 
 .prize-medal {
-  width: 77px;
-  height: 132px;
+  width: rem(77px);
+  height: rem(132px);
   position: absolute;
   top: 0;
-  right: 30px;
+  right: rem(30px);
 }
 
 .prize-title {
@@ -25,5 +25,5 @@
 
 .prize-button:hover,
 .prize-button:focus {
-  box-shadow: 0 8px 25px -8px #7367f0;
+  box-shadow: 0 8px 25px -8px $success-color;
 }

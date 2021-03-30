@@ -1,6 +1,6 @@
 .card-employee {
   padding: rem(20px);
-  height: 450px;
+  height: rem(450px);
 }
 
 .title-employee {
@@ -20,9 +20,11 @@
 }
 
 .avatar {
+  width: rem(42px);
   margin-right: rem(12px);
-  border-radius: 5px;
+  border-radius: rem(5px);
 }
+
 .cart-recharts {
   display: flex;
   align-items: center;

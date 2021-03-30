@@ -16,7 +16,7 @@ export const timelines = [
     title: 'Client Meeting',
     text: 'Project meeting with john @10:15am',
     time: '45 min ago',
-    color: '#2b97d7',
+    color: '#dbb42b',
     children: <ProfileMedia />,
   },
   {

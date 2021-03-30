@@ -6,20 +6,22 @@
 .box-pic {
   margin-left: calc(-4.95px);
   margin-right: calc(-4.95px);
-  width: 33px;
-  height: 33px;
+  width: rem(33px);
+  height: rem(33px);
   border-radius: 50%;
   background-color: $white;
   border: 1px solid $white;
 }
 
 .avatar-pic {
+  width: rem(33px);
+  height: rem(33px);
   border-radius: inherit;
   cursor: pointer;
 }
 .avatar-pic:focus,
 .avatar-pic:hover {
   transition: 300ms;
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
   transform: scale(1.3);
 }

@@ -1,17 +1,17 @@
 .cart-meetup {
-  height: 450px;
+  height: rem(450px);
 }
 .box-meetup {
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: rem(150px);
   border-top-left-radius: rem(5px);
   border-top-right-radius: rem(5px);
   background-color: $primary-300;
 }
 .meetup {
-  height: 150px;
-  width: 300px;
+  height: rem(150px);
+  width: rem(300px);
 }
 
 .no-padding {
@@ -51,15 +51,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: rem(32px);
+  height: rem(32px);
   margin-right: rem(10px);
   border-radius: 5px;
   background-color: $primary-300;
 }
 .calendar {
-  width: 18px;
-  height: 18px;
+  width: rem(18px);
+  height: rem(18px);
 }
 
 .notebook-pic {

@@ -8,19 +8,19 @@ const AvatarListPic = () => {
   return (
     <div className="avatar-list">
       <div className="box-pic">
-        <img className="avatar-pic" src={avatar1} alt="avatar" width="33" />
+        <img className="avatar-pic" src={avatar1} alt="avatar" />
       </div>
       <div className="box-pic">
-        <img className="avatar-pic" src={avatar2} alt="avatar" width="33" />
+        <img className="avatar-pic" src={avatar2} alt="avatar" />
       </div>
       <div className="box-pic">
-        <img className="avatar-pic" src={avatar3} alt="avatar" width="33" />
+        <img className="avatar-pic" src={avatar3} alt="avatar" />
       </div>
       <div className="box-pic">
-        <img className="avatar-pic" src={avatar4} alt="avatar" width="33" />
+        <img className="avatar-pic" src={avatar4} alt="avatar" />
       </div>
       <div className="box-pic">
-        <img className="avatar-pic" src={avatar5} alt="avatar" width="33" />
+        <img className="avatar-pic" src={avatar5} alt="avatar" />
       </div>
     </div>
   );

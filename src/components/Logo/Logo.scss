@@ -9,12 +9,23 @@
 
 .logoBox {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: rem(20px);
+  left: rem(20px);
+}
+
+.logoEbs {
+  width: rem(100px);
+  height: rem(80px);
 }
 
 @include mq($until: tablet) {
   .logoBox {
-    display: none;
+    top: rem(100px);
+    left: rem(200px);
+  }
+
+  .logoEbs {
+    width: rem(60px);
+    height: rem(40px);
   }
 }

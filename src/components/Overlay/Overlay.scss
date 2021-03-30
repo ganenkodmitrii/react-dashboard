@@ -12,7 +12,7 @@
 }
 
 .hero {
-  font-size: 500px;
+  font-size: rem(500px);
 }
 @include mq($until: tablet) {
   .overlay {
@@ -25,7 +25,7 @@
     width: 50%;
   }
   .hero {
-    font-size: 300px;
+    font-size: rem(300px);
   }
 }
 

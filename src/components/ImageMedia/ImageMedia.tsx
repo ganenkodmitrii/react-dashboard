@@ -4,7 +4,7 @@ const ImageMedia = () => {
   return (
     <div className="image-media">
       <div className="box-imgjson">
-        <img src={imgJson} alt="examplt file json" height="23" width="21" />
+        <img className="img-json" src={imgJson} alt="examplt file json" />
       </div>
       <h4>data.json</h4>
     </div>

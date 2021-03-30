@@ -24,7 +24,7 @@ const CartEmployee = () => {
       </div>
       <div className="cart-statist">
         <div className="cart-avatar">
-          <img className="avatar" src={avatar2} alt="avatar" width="42" />
+          <img className="avatar" src={avatar2} alt="avatar" />
           <div className="avatar-info">
             <h4>Louisa Norton</h4>
             <p>UI Designer</p>
@@ -37,7 +37,7 @@ const CartEmployee = () => {
       </div>
       <div className="cart-statist">
         <div className="cart-avatar">
-          <img className="avatar" src={avatar3} alt="avatar" width="42" />
+          <img className="avatar" src={avatar3} alt="avatar" />
           <div className="avatar-info">
             <h4>Jayden Duncan</h4>
             <p>Java Developer</p>
@@ -50,7 +50,7 @@ const CartEmployee = () => {
       </div>
       <div className="cart-statist">
         <div className="cart-avatar">
-          <img className="avatar" src={avatar4} alt="avatar" width="42" />
+          <img className="avatar" src={avatar4} alt="avatar" />
           <div className="avatar-info">
             <h4>Cynthia Howell</h4>
             <p>Anguler Developer</p>
@@ -63,7 +63,7 @@ const CartEmployee = () => {
       </div>
       <div className="cart-statist">
         <div className="cart-avatar">
-          <img className="avatar" src={avatar2} alt="avatar" width="42" />
+          <img className="avatar" src={avatar2} alt="avatar" />
           <div className="avatar-info">
             <h4>Helena Payne</h4>
             <p>Marketing</p>
@@ -76,7 +76,7 @@ const CartEmployee = () => {
       </div>
       <div className="cart-statist">
         <div className="cart-avatar">
-          <img className="avatar" src={avatar5} alt="avatar" width="42" />
+          <img className="avatar" src={avatar5} alt="avatar" />
           <div className="avatar-info">
             <h4>Troy Jensen</h4>
             <p>iOS Developer</p>

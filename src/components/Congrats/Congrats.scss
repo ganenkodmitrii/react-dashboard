@@ -1,5 +1,5 @@
 .box-congratulation {
-  height: 210px;
+  height: rem(210px);
   padding: rem(20px);
   position: relative;
   border-radius: rem(5px);
@@ -38,8 +38,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: rem(70px);
+  height: rem(70px);
   border-radius: 50%;
   color: $white;
   background-color: $primary-color;

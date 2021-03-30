@@ -4,7 +4,7 @@ const ProfileMedia = () => {
   return (
     <div className="box-profile-media">
       <div className="media-pic">
-        <img className="avatar-media" src={avatar1} alt="avatar" width="35" />
+        <img className="avatar-media" src={avatar1} alt="avatar" />
       </div>
       <div>
         <h4>John Doe (Client)</h4>
