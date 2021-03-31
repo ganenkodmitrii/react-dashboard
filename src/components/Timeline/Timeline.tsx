@@ -1,3 +1,4 @@
+import React from 'react';
 const Timeline: React.FC = ({ children }) => {
   return (
     <div className="card-timeline">
