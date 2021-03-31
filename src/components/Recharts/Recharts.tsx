@@ -32,7 +32,6 @@ export default function Recharts() {
             dataKey="value"
             onMouseEnter={onPieEnter}
           >
-            {' '}
             {data.map((obj, i) => (
               <Cell key={i} fill={obj.color} />
             ))}

@@ -2,29 +2,29 @@
 // $from - от
 
 // @media screen and (max-width: 767px) {
-//   .logoBox {
+//   .box-logo {
 //     display: none;
 //   }
 // }
 
-.logoBox {
+.box-logo {
   position: absolute;
   top: rem(20px);
   left: rem(20px);
 }
 
-.logoEbs {
+.logo {
   width: rem(100px);
   height: rem(80px);
 }
 
 @include mq($until: tablet) {
-  .logoBox {
+  .box-logo {
     top: rem(100px);
     left: rem(200px);
   }
 
-  .logoEbs {
+  .logo {
     width: rem(60px);
     height: rem(40px);
   }

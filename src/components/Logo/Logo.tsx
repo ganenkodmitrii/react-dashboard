@@ -5,8 +5,8 @@ import logo from '../../resources/logo.png';
 
 const Logo = () => {
   return (
-    <div className="logoBox">
-      <img className="logoEbs" src={logo} alt="logo" />
+    <div className="box-logo">
+      <img className="logo" src={logo} alt="logo" />
     </div>
   );
 };

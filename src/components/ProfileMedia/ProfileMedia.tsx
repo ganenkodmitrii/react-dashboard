@@ -1,10 +1,10 @@
-import avatar1 from '../../resources/avatar1.jpg';
+import profileImage from '../../resources/avatar1.jpg';
 
 const ProfileMedia = () => {
   return (
     <div className="box-profile-media">
-      <div className="media-pic">
-        <img className="avatar-media" src={avatar1} alt="avatar" />
+      <div className="box-profile-img">
+        <img className="profile-img" src={profileImage} alt="profile John Doe" />
       </div>
       <div>
         <h4>John Doe (Client)</h4>

@@ -46,16 +46,8 @@ const Dashboard = () => {
           <Col size={4}>
             <Cart>
               <Timeline>
-                {timelines.map(item => (
-                  <TimelineItem
-                    key={item.id}
-                    title={item.title}
-                    time={item.time}
-                    text={item.text}
-                    color={item.color}
-                  >
-                    {item.children}
-                  </TimelineItem>
+                {timelines.map(({ id, ...items }) => (
+                  <TimelineItem key={id} {...items} />
                 ))}
               </Timeline>
             </Cart>
