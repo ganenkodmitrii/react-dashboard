@@ -2,12 +2,14 @@
   display: flex;
   align-items: flex-start;
 }
-.media-pic {
-  width: 35px;
-  height: 35px;
-  margin-right: 0.5rem;
+.box-profile-img {
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(7px);
   border-radius: 50%;
 }
-.avatar-media {
+.profile-img {
+  width: rem(35px);
+  height: rem(35px);
   border-radius: inherit;
 }

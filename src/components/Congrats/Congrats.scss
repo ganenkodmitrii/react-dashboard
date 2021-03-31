@@ -1,8 +1,8 @@
 .box-congratulation {
-  height: 210px;
-  padding: 1.5rem;
+  height: rem(210px);
+  padding: rem(20px);
   position: relative;
-  border-radius: 5px;
+  border-radius: rem(5px);
 }
 
 .card__congratulations {
@@ -31,15 +31,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
 
 .flagLock-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: rem(70px);
+  height: rem(70px);
   border-radius: 50%;
   color: $white;
   background-color: $primary-color;
@@ -47,11 +47,11 @@
 
 .flagLock {
   color: $white;
-  width: 33px;
-  height: 33px;
+  width: rem(33px);
+  height: rem(33px);
 }
 
 .card__congratulations-title {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: rem(10px);
+  margin-bottom: rem(14px);
 }

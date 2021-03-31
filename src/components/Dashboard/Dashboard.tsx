@@ -43,13 +43,11 @@ const Dashboard = () => {
           </Col>
         </Row>
         <Row>
-          <Col size={8}>
+          <Col size={4}>
             <Cart>
               <Timeline>
-                {timelines.map(item => (
-                  <TimelineItem key={item.id} title={item.title} time={item.time} text={item.text}>
-                    {item.children}
-                  </TimelineItem>
+                {timelines.map(({ id, ...items }) => (
+                  <TimelineItem key={id} {...items} />
                 ))}
               </Timeline>
             </Cart>

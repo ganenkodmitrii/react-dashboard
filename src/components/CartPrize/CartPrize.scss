@@ -3,11 +3,11 @@
 }
 
 .prize-medal {
-  width: 77px;
-  height: 132px;
+  width: rem(77px);
+  height: rem(132px);
   position: absolute;
   top: 0;
-  right: 30px;
+  right: rem(30px);
 }
 
 .prize-title {
@@ -18,25 +18,12 @@
 }
 
 .prize-currency {
-  margin-top: 56px;
-  margin-bottom: 12px;
+  margin-top: rem(50px);
+  margin-bottom: rem(12px);
   color: $primary-color;
 }
 
-// .prize-button {
-//   display: inline-block;
-//   color: $white;
-//   border-color: #7367f0;
-//   background-color: #7367f0;
-//   font-weight: 500;
-//   cursor: pointer;
-//   text-align: center;
-//   border: 1px solid transparent;
-//   padding: 0.786rem 1.5rem;
-//   border-radius: 0.358rem;
-//   transition: box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
 .prize-button:hover,
 .prize-button:focus {
-  box-shadow: 0 8px 25px -8px #7367f0;
+  box-shadow: 0 8px 25px -8px $success-color;
 }

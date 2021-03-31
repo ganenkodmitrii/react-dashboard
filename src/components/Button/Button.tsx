@@ -8,8 +8,6 @@ interface StylesBtnProps {
 }
 // "primary"
 const Button: React.FC<StylesBtnProps> = ({ className, type, size }) => {
-
-
   return (
     <Btn className={className} type={type} size={size}>
       click me
