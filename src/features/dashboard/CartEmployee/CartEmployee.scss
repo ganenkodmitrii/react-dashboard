@@ -1,28 +1,31 @@
 .card-employee {
-  padding: 1.5rem;
-  height: 450px;
+  padding: rem(20px);
+  height: rem(450px);
 }
 
 .title-employee {
-  padding-bottom: 1.5rem;
+  margin-bottom: rem(20px);
 }
 .cart-statist {
   display: flex;
   justify-content: space-between;
 }
+.cart-statist:not(:last-child) {
+  margin-bottom: rem(20px);
+}
 
 .cart-avatar {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .avatar {
-  margin-right: 12px;
-  border-radius: 5px;
+  width: rem(42px);
+  margin-right: rem(12px);
+  border-radius: rem(5px);
 }
+
 .cart-recharts {
-  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
 }

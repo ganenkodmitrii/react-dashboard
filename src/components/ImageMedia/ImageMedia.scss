@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
 }
-.box-imgjson {
-  margin-right: 1rem;
+.box-img-json {
+  margin-right: rem(14px);
+}
+
+.img-json {
+  width: rem(21px);
+  height: rem(23px);
 }
