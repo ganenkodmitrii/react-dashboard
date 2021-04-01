@@ -1,6 +1,6 @@
-import ImageMedia from '../ImageMedia/ImageMedia';
-import ProfileMedia from '../ProfileMedia/ProfileMedia';
-import AvatarListPic from '../AvatarListPic/AvatarListPic';
+import ImageMedia from '../components/ImageMedia/ImageMedia';
+import ProfileMedia from '../components/ProfileMedia/ProfileMedia';
+import AvatarListPic from '../components/AvatarListPic/AvatarListPic';
 
 export const timelines = [
   {

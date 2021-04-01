@@ -1,7 +1,7 @@
-import { flagLock } from '../../resources/index';
+import { flagLock } from '../../../resources/index';
 import { Icon } from '@ebs-integrator/react-ebs-ui';
-import flag1 from '../../resources/flag1.png';
-import flag2 from '../../resources/flag2.png';
+import flag1 from '../../../resources/flag1.png';
+import flag2 from '../../../resources/flag2.png';
 
 const Congrats = () => {
   return (

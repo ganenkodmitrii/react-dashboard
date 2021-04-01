@@ -1,6 +1,6 @@
-import photoCurtisStone from '../../resources/avatar1.jpg';
+import avatar1 from '../../../resources/avatar1.jpg';
 
-import handWithClock from '../../resources/hand-with-clock.jpg';
+import handWithClock from '../../../resources/hand-with-clock.jpg';
 
 const CartProfile = () => {
   return (
@@ -10,7 +10,7 @@ const CartProfile = () => {
       </div>
       <div className="box-statistic">
         <span className="box-user-foto">
-          <img className="user-foto" src={photoCurtisStone} alt="foto man" />
+          <img className="user-foto" src={avatar1} alt="foto man" />
         </span>
         <div className="user-statistics">
           <h2 className="user-title">Curtis Stone</h2>
@@ -23,15 +23,15 @@ const CartProfile = () => {
         <div className="hline"></div>
         <div className="numeral-stat">
           <div>
-            <p>Followers</p>
+            <p className="">Followers</p>
             <h2>10.3k</h2>
           </div>
           <div>
-            <p>Projects</p>
+            <p className="">Projects</p>
             <h2>156</h2>
           </div>
           <div>
-            <p>Rank</p>
+            <p className="">Rank</p>
             <h2>23</h2>
           </div>
         </div>

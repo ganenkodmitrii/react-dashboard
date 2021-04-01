@@ -2,10 +2,16 @@ interface TimelineItemProps {
   title: string;
   time: string;
   text: string;
-  type: string;
+  type?: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ title, text, time, type, children }) => {
+const TimelineItem: React.FC<TimelineItemProps> = ({
+  title,
+  text,
+  time,
+  type = 'primary',
+  children,
+}) => {
   return (
     <li className="timeline-item">
       <div className={['timelile-point', `timelile-point--${type}`].join(' ')}></div>

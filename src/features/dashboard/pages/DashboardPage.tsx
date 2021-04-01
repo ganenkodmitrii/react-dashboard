@@ -1,19 +1,19 @@
-import Layout from '../Layout/Layout';
+import Layout from '../../../components/Layout/Layout';
 import { Container, Row, Col } from '@ebs-integrator/react-ebs-ui';
 import CartPrize from '../CartPrize/CartPrize';
 import Congrats from '../Congrats/Congrats';
-import Cart from '../Cart/Cart';
+import Cart from '../../../components/Cart/Cart';
 import CartEmployee from '../CartEmployee/CartEmployee';
 import CartMeetUp from '../CartMeetUp/CartMeetUp';
 import CartProfile from '../CartProfile/CartProfile';
-import Timeline from '../Timeline/Timeline';
-import TimelineItem from '../Timeline/TimelineItem';
-import { timelines } from '../Timeline/TimelinesData';
+import Timeline from '../../../components/Timeline/Timeline';
+import TimelineItem from '../../../components/Timeline/TimelineItem';
+import { timelines } from '../../../data/TimelinesData';
 
-const Dashboard = () => {
+const DashboardPage = () => {
   return (
     <Layout>
-      <Container className="">
+      <Container>
         <Row className="mb-16">
           <h1 className="dashboard-title">Advance Card</h1>
         </Row>
@@ -57,4 +57,4 @@ const Dashboard = () => {
     </Layout>
   );
 };
-export default Dashboard;
+export default DashboardPage;

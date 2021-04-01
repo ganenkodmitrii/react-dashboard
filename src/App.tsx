@@ -1,6 +1,7 @@
 import LoginPage from './features/auth/LoginPage/LoginPage';
 // import Button from './components/Button/Button';
-import Dashboard from './components/Dashboard/Dashboard';
+import DashboardPage from './features/dashboard/pages/DashboardPage';
+import FormRepeater from './features/home/FormRepeater/FormRepeater';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -8,11 +9,11 @@ function App() {
     <div>
       <Switch>
         <Route path="/" exact component={LoginPage} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={DashboardPage} />
+        <Route path="/form" component={FormRepeater} />
       </Switch>
       {/* <Button /> */}
     </div>
-
   );
 }
 

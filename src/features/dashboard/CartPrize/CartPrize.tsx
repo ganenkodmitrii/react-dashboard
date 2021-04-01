@@ -1,4 +1,4 @@
-import { medal } from '../../resources/index';
+import { medal } from '../../../resources/index';
 import { Icon, Button } from '@ebs-integrator/react-ebs-ui';
 
 const CartPrize = () => {
