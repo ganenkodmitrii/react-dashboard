@@ -1,8 +1,9 @@
 import LoginPage from './features/auth/LoginPage/LoginPage';
-// import Button from './components/Button/Button';
 import DashboardPage from './features/dashboard/pages/DashboardPage';
-import FormRepeater from './features/home/FormRepeater/FormRepeater';
+import FormPage from './features/home/pages/FormPage';
 import { Switch, Route } from 'react-router-dom';
+
+// import Button from './components/Button/Button';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={LoginPage} />
         <Route path="/dashboard" component={DashboardPage} />
-        <Route path="/form" component={FormRepeater} />
+        <Route path="/form" component={FormPage} />
       </Switch>
       {/* <Button /> */}
     </div>

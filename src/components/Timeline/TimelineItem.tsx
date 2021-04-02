@@ -1,11 +1,11 @@
-interface TimelineItemProps {
+export interface TimelineItemProps {
   title: string;
   time: string;
   text: string;
   type?: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({
+export const TimelineItem: React.FC<TimelineItemProps> = ({
   title,
   text,
   time,
@@ -25,5 +25,3 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     </li>
   );
 };
-
-export default TimelineItem;
