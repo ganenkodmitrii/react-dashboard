@@ -29,6 +29,9 @@ const Layout: React.FC = ({ children }) => {
             <NavLink to="/form">
               <Sidebar.Options.Item text="form" />
             </NavLink>
+            <NavLink to="/teams">
+              <Sidebar.Options.Item text="teams" />
+            </NavLink>
           </Sidebar.Options.TopSide>
         </Sidebar.Options>
       </Sidebar>
