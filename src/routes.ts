@@ -1,14 +1,24 @@
-export const routes = [
+import { LoginPage } from 'features/auth';
+import { DashboardPage } from 'features/dashboard';
+import { FormPage } from './features/home';
+import { RouteProps } from 'types/common';
+export const routes: RouteProps[] = [
   {
-    login: '/',
+    path: '/',
     text: 'login',
+    exact: true,
+    component: LoginPage,
   },
   {
-    login: '/dashboard',
+    path: '/dashboard',
     text: 'advance',
+    exact: true,
+    component: DashboardPage,
   },
   {
-    login: '/form',
+    path: '/form',
     text: 'form',
+    exact: true,
+    component: FormPage,
   },
 ];

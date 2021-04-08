@@ -22,8 +22,8 @@ const Layout: React.FC = ({ children }) => {
 
         <Sidebar.Options>
           <Sidebar.Options.TopSide>
-            {routes.map(({ login, text }, index) => (
-              <NavLink key={index} to={login}>
+            {routes.map(({ path, text }, index) => (
+              <NavLink key={index} to={path}>
                 <Sidebar.Options.Item text={text} />
               </NavLink>
             ))}

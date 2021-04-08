@@ -46,11 +46,7 @@ const DashboardPage = () => {
             <Card>
               <div className="card-timeline">
                 <h2 className="title-timeline">User Timeline</h2>
-                <Timeline>
-                  {timelines.map(({ id, ...items }) => (
-                    <Timeline.Item key={id} {...items} />
-                  ))}
-                </Timeline>
+                <Timeline children={timelines.map(Timeline.Item)} />
               </div>
             </Card>
           </Col>

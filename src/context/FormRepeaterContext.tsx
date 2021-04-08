@@ -1,23 +1,10 @@
 import { createContext, useState } from 'react';
-// import { Properties } from '../types/common';
-
-export enum Fields {
-  item_name = 'Item Name',
-  cost_name = 'Cost',
-  quantity_name = 'Quantity',
-  price_name = 'Price',
-}
-
-// let layer: { [key in keyof typeof MyEnum]: any };
-
-type Item = {
-  [key in keyof typeof Fields]: string;
-};
+import { Item } from '../types/common';
 
 interface ContextProps {
-  formState: Item[];
-  addCard: (newItem: Item) => void;
-  deleteCard: (index: number) => void;
+  state: Item[];
+  add: (newItem: Item) => void;
+  remove: (index: number) => void;
 }
 
 export const formItem: Item = {
@@ -28,36 +15,24 @@ export const formItem: Item = {
 };
 
 export const FormRepeaterContext = createContext<ContextProps>({
-  formState: [
-    formItem,
-
-    //   [{​​​​​​​​​ costName: 'value' }​​​​​​​​​,
-    // {​​​​​​​​​ price: 'value' }​​​​​​​​​,
-    // {​​​​​​​​​ next: 'value' }​​​​​​​​​,
-    // ],
-    // [{​​​​​​​​​​ costName: 'value' }​​​​​​​​​​,
-    // {​​​​​​​​​​ price: 'value' }​​​​​​​​​​,
-    // {​​​​​​​​​​ next: 'value' }​​​​​​​​​​,
-    // ]
-    // ]
-  ],
-  addCard: () => null,
-  deleteCard: () => null,
+  state: [formItem],
+  add: () => null,
+  remove: () => null,
 });
 
 export const FormRepeaterProvider: React.FC = ({ children }) => {
   const [state, setState] = useState<Item[]>([formItem]);
 
-  const addCard = (newItem: Item) => {
+  const add = (newItem: Item) => {
     setState(i => [...i, newItem]);
   };
 
-  const deleteCard = (index: number) => {
+  const remove = (index: number) => {
     setState(state.filter((item, i) => i !== index));
   };
 
   return (
-    <FormRepeaterContext.Provider value={{ formState: state, addCard, deleteCard }}>
+    <FormRepeaterContext.Provider value={{ state, add, remove }}>
       {children}
     </FormRepeaterContext.Provider>
   );

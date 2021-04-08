@@ -1,4 +1,5 @@
 export interface TimelineItemProps {
+  id: number;
   title: string;
   time: string;
   text: string;
@@ -6,6 +7,7 @@ export interface TimelineItemProps {
 }
 
 export const TimelineItem: React.FC<TimelineItemProps> = ({
+  id,
   title,
   text,
   time,
@@ -13,7 +15,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   children,
 }) => {
   return (
-    <li className="timeline-item">
+    <li key={id} className="timeline-item">
       <div className={['timelile-point', `timelile-point--${type}`].join(' ')}></div>
       <div className="box-title">
         <h4>{title}</h4>
