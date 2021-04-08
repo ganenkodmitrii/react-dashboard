@@ -1,5 +1,4 @@
-import React from 'react';
-import { ebsImage } from '../../resources/index';
+import { ebsImage } from 'resources';
 
 import { Icon } from '@ebs-integrator/react-ebs-ui';
 

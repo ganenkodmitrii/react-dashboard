@@ -1,11 +1,16 @@
 import React from 'react';
-const Timeline: React.FC = ({ children }) => {
-  return (
-    <div className="card-timeline">
-      <h2 className="title-employee">User Timeline</h2>
+import { TimelineItem, TimelineItemProps } from './TimelineItem';
 
-      <ul className="timeline-list">{children}</ul>
-    </div>
-  );
+interface TimelineComposition {
+  Item: React.FC<TimelineItemProps>;
+}
+
+const Timeline: React.FC & TimelineComposition = ({ children }) => {
+  return <ul className="timeline-list">{children}</ul>;
 };
+
+Timeline.displayName = 'Timeline';
+
+Timeline.Item = TimelineItem;
+
 export default Timeline;

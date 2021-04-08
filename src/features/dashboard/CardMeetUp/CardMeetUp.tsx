@@ -1,6 +1,6 @@
 import { Icon } from '@ebs-integrator/react-ebs-ui';
 import AvatarListPic from '../../../components/AvatarListPic/AvatarListPic';
-import { geolocation, calendar } from '../../../resources/index';
+import { geolocation, calendar } from 'resources';
 
 const CartMeetUp = () => {
   return (
