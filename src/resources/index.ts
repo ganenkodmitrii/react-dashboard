@@ -8,5 +8,5 @@ export { ReactComponent as flagLock } from './flag-lock.svg';
 export { ReactComponent as medal } from './medal.svg';
 export { ReactComponent as geolocation } from './geolocation.svg';
 export { ReactComponent as calendar } from './calendar.svg';
-export { ReactComponent as plusAdd } from './plus-add.svg';
-export { ReactComponent as xDelete } from './x-delete.svg';
+export { ReactComponent as plusIcon } from './plus-add.svg';
+export { ReactComponent as deleteIcon } from './x-delete.svg';

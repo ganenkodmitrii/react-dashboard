@@ -22,9 +22,12 @@
 
 .ebs-button--ghost.ebs-button__wrapper.delete-button {
   height: rem(40px);
-  margin-top: rem(21px);
+  margin-top: rem(20px);
   color: $danger-color;
   border-color: $danger-color;
+}
+.ebs-button--medium.delete-button {
+  margin-top: rem(20px);
 }
 
 .ebs-button--ghost.ebs-button__wrapper.delete-button:hover,

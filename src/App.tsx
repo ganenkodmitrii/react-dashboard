@@ -1,20 +1,11 @@
-import LoginPage from './features/auth/LoginPage/LoginPage';
-// import Button from './components/Button/Button';
-import DashboardPage from './features/dashboard/pages/DashboardPage';
-import FormRepeater from './features/home/FormRepeater/FormRepeater';
 import { Switch, Route } from 'react-router-dom';
+import { RouteProps } from 'types/common';
+import { routes } from './routes';
 
-function App() {
-  return (
-    <div>
-      <Switch>
-        <Route path="/" exact component={LoginPage} />
-        <Route path="/dashboard" component={DashboardPage} />
-        <Route path="/form" component={FormRepeater} />
-      </Switch>
-      {/* <Button /> */}
-    </div>
-  );
-}
+const App: React.FC = () => {
+  const renderRoute = (params: RouteProps, index: number) => <Route key={index} {...params} />;
+
+  return <Switch>{routes.map(renderRoute)}</Switch>;
+};
 
 export default App;

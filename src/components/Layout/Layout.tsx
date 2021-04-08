@@ -1,5 +1,7 @@
 import { Layout as Container, InputSearch, Sidebar } from '@ebs-integrator/react-ebs-ui';
 import { NavLink } from 'react-router-dom';
+import { routes } from '../../routes';
+
 const Layout: React.FC = ({ children }) => {
   return (
     <Container>
@@ -20,15 +22,11 @@ const Layout: React.FC = ({ children }) => {
 
         <Sidebar.Options>
           <Sidebar.Options.TopSide>
-            <NavLink to="/">
-              <Sidebar.Options.Item text="initial" />
-            </NavLink>
-            <NavLink to="/dashboard">
-              <Sidebar.Options.Item text="advance" />
-            </NavLink>
-            <NavLink to="/form">
-              <Sidebar.Options.Item text="form" />
-            </NavLink>
+            {routes.map(({ path, text }, index) => (
+              <NavLink key={index} to={path}>
+                <Sidebar.Options.Item text={text} />
+              </NavLink>
+            ))}
           </Sidebar.Options.TopSide>
         </Sidebar.Options>
       </Sidebar>
