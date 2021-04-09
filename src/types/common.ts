@@ -18,3 +18,8 @@ export interface RouteProps {
   text?: string;
   component: any;
 }
+
+export interface Results<T> {
+  count?: number;
+  items?: T[];
+}

@@ -1,6 +1,7 @@
 import { LoginPage } from 'features/auth';
 import { DashboardPage } from 'features/dashboard';
 import { FormPage } from './features/home';
+import { TeamsPage } from './features/teams';
 import { RouteProps } from 'types/common';
 export const routes: RouteProps[] = [
   {
@@ -20,5 +21,11 @@ export const routes: RouteProps[] = [
     text: 'form',
     exact: true,
     component: FormPage,
+  },
+  {
+    path: '/teams',
+    text: 'teams',
+    exact: true,
+    component: TeamsPage,
   },
 ];
