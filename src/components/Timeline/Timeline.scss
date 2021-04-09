@@ -1,0 +1,59 @@
+.timeline-list {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  margin-left: rem(5px);
+  padding-left: rem(28px);
+  border-left: 1px solid #d8d6de;
+  list-style-type: none;
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  padding-bottom: rem(28px);
+}
+
+.timelile-point {
+  width: rem(12px);
+  height: rem(12px);
+  border-radius: 50%;
+  position: absolute;
+  left: rem(-6px);
+
+  &--primary {
+    background-color: $info-color;
+  }
+  &--danger {
+    background-color: $danger-color;
+  }
+  &--warning {
+    background-color: $warning-color;
+  }
+  &--success {
+    background-color: $success-color;
+  }
+}
+
+.timelile-point::before {
+  content: '';
+  z-index: 1;
+  width: rem(20px);
+  height: rem(20px);
+  position: absolute;
+  top: rem(-4px);
+  right: rem(-4px);
+  border-radius: 50%;
+  background-color: rgba(115, 103, 240, 0.12);
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(7px);
+}
+
+.timelineitem-text {
+  margin-bottom: rem(14px);
+}

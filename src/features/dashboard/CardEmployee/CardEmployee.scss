@@ -1,0 +1,31 @@
+.card-employee {
+  padding: rem(20px);
+  height: rem(450px);
+}
+
+.title-employee {
+  margin-bottom: rem(20px);
+}
+.cart-statist {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-statist:not(:last-child) {
+  margin-bottom: rem(20px);
+}
+
+.cart-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: rem(42px);
+  margin-right: rem(12px);
+  border-radius: rem(5px);
+}
+
+.cart-recharts {
+  display: flex;
+  align-items: center;
+}

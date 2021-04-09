@@ -1,0 +1,73 @@
+.cart-meetup {
+  height: rem(450px);
+}
+.box-meetup {
+  display: flex;
+  justify-content: center;
+  height: rem(150px);
+  border-top-left-radius: rem(5px);
+  border-top-right-radius: rem(5px);
+  background-color: $primary-300;
+}
+.meetup {
+  height: rem(150px);
+  width: rem(300px);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.nodebook-box {
+  padding: rem(20px);
+}
+.notebook-info {
+  display: flex;
+  margin-bottom: rem(32px);
+}
+
+.notebook-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: 1px solid #d8d6de;
+  padding-right: rem(18px);
+  margin-right: rem(18px);
+}
+
+.notebook-title {
+  margin-bottom: rem(4px);
+}
+
+.notebook-calendar,
+.notebook-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(18px);
+}
+
+.notebook-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(10px);
+  border-radius: 5px;
+  background-color: $primary-300;
+}
+.calendar {
+  width: rem(18px);
+  height: rem(18px);
+}
+
+.notebook-pic {
+  display: flex;
+  align-items: center;
+  padding-top: rem(10px);
+}
+
+.number-pic {
+  margin-left: rem(14px);
+}

@@ -1,0 +1,73 @@
+.cart-profile {
+  height: rem(450px);
+}
+.handWithClock {
+  height: rem(150px);
+  width: 100%;
+  border-radius: inherit;
+}
+
+.box-statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(70px 32px 20px 32px);
+  align-items: center;
+  position: relative;
+}
+
+.box-user-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: rem(114px);
+  width: rem(114px);
+  position: absolute;
+  top: rem(-50px);
+  border-radius: 50%;
+  background-color: #f6f6f6;
+}
+.user-foto {
+  height: rem(100px);
+  width: rem(100px);
+  border-radius: inherit;
+}
+
+.user-statistics {
+  margin-top: rem(16px);
+  text-align: center;
+}
+
+.user-title {
+  margin-bottom: rem(7px);
+}
+.user-country {
+  margin-bottom: rem(7px);
+}
+
+.box-level {
+  margin-left: rem(40px);
+  margin-right: rem(40px);
+  margin-top: rem(10px);
+  margin-bottom: rem(10px);
+  padding: rem(4px 5px);
+  border-radius: rem(5px);
+  color: $primary-color;
+  background-color: $primary-300;
+}
+
+.hline {
+  margin-top: rem(14px);
+  margin-bottom: rem(21px);
+  width: 100%;
+  height: rem(2px);
+  background: #f6f6f6;
+}
+
+.numeral-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.box-profile-media {
+  display: flex;
+  align-items: flex-start;
+}
+.box-profile-img {
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(7px);
+  border-radius: 50%;
+}
+.profile-img {
+  width: rem(35px);
+  height: rem(35px);
+  border-radius: inherit;
+}

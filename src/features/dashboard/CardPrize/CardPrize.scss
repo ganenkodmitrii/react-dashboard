@@ -1,0 +1,29 @@
+.card-prize {
+  background: $white;
+}
+
+.prize-medal {
+  width: rem(77px);
+  height: rem(132px);
+  position: absolute;
+  top: 0;
+  right: rem(30px);
+}
+
+.prize-title {
+  color: #5e5873;
+}
+.prize-text {
+  color: #6e6b7b;
+}
+
+.prize-currency {
+  margin-top: rem(50px);
+  margin-bottom: rem(12px);
+  color: $primary-color;
+}
+
+.prize-button:hover,
+.prize-button:focus {
+  box-shadow: 0 8px 25px -8px $success-color;
+}

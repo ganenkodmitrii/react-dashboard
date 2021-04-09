@@ -1,0 +1,125 @@
+// Main colors
+$primary-color: #58a441;
+$success-color: #2ac952;
+$info-color: #3bc0f9;
+$warning-color: #ffd83d;
+$danger-color: #ff3a30;
+$normal-color: #a5a5a5;
+
+$white: #fff;
+$black: #000;
+
+// Accent colors
+$accent-color-1: #9b1dd9;
+$accent-color-2: #fdce14;
+$accent-color-3: #24a677;
+
+// Primary colors
+$primary-100: #f5fde7;
+$primary-200: #e8fcd0;
+$primary-300: #d5f7b6;
+$primary-400: #c2efa0;
+$primary-500: #a5e581;
+$primary-600: #7cc45e;
+$primary-700: $primary-color;
+$primary-800: #398429;
+$primary-900: #226d18;
+// $primary-000: #eef5ff;
+// $primary-100: #d6e4ff;
+// $primary-200: #adc8ff;
+// $primary-300: #85a9ff;
+// $primary-400: #6690ff;
+// $primary-500: $primary-color; // main one
+// $primary-600: #254eda;
+// $primary-700: #1a39b6;
+// $primary-800: #102693;
+// $primary-900: #0a1a7a;
+
+// Grey colors
+$grey-50: #fafafa;
+$grey-100: #f5f5f5;
+$grey-200: #e5e5e5;
+$grey-300: #d5d5d5;
+$grey-400: #c5c5c5;
+$grey-500: #a5a5a5;
+$grey-600: #888888;
+$grey-700: #666666;
+$grey-800: #444444;
+$grey-900: #222222;
+
+// Semantic colors
+$success-100: #d9fcd4;
+$success-200: #adf9aa;
+$success-300: #7dee84;
+$success-400: #5ade6e;
+$success-500: $success-color;
+$success-600: #1eac50;
+$success-700: #15904c;
+$success-800: #0d7445;
+$success-900: #086040;
+
+// semantic info colors
+$info-100: #d7fdfe;
+$info-200: #b0f6fe;
+$info-300: #89eafd;
+$info-400: #6bd9fc;
+$info-500: $info-color;
+$info-600: #2b97d7;
+$info-700: #1d72b3;
+$info-800: #11518f;
+$info-900: #0c3a76;
+
+// semantic warning colors
+$warning-100: #fffbd8;
+$warning-200: #fff4b2;
+$warning-300: #ffed8b;
+$warning-400: #ffe56e;
+$warning-500: $warning-color;
+$warning-600: #dbb42b;
+$warning-700: #b7921f;
+$warning-800: #937212;
+$warning-900: #7a5b0b;
+
+// semantic danger colors
+$danger-100: #ffe5d5;
+$danger-200: #ffc5ac;
+$danger-300: #ff9d82;
+$danger-400: #ff7863;
+$danger-500: $danger-color;
+$danger-600: #db2329;
+$danger-700: #b7182b;
+$danger-800: #930f2a;
+$danger-900: #7a0929;
+
+// accent 1 colors
+$accent-1-100: #f9d1fd;
+$accent-1-200: #efa4fb;
+$accent-1-300: #da74f3;
+$accent-1-400: #c051e8;
+$accent-1-500: $accent-color-1;
+$accent-1-600: #7915ba;
+$accent-1-700: #5b0e9c;
+$accent-1-800: #40097d;
+$accent-1-900: #2e0568;
+
+// accent 2 colors
+$accent-2-100: #fef9cf;
+$accent-2-200: #fef1a0;
+$accent-2-300: #fee771;
+$accent-2-400: #fdde4e;
+$accent-2-500: $accent-color-2;
+$accent-2-600: #d9ac0e;
+$accent-2-700: #b68c0a;
+$accent-2-800: #926d06;
+$accent-2-900: #795703;
+
+// accent 3 colors
+$accent-3-100: #d3fadc;
+$accent-3-200: #a9f6c3;
+$accent-3-300: #79e4a8;
+$accent-3-400: #53c993;
+$accent-3-500: $accent-color-3;
+$accent-3-600: #1a8e70;
+$accent-3-700: #127766;
+$accent-3-800: #0b605a;
+$accent-3-900: #064d4f;
