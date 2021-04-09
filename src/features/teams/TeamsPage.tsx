@@ -1,38 +1,37 @@
 import { useState } from 'react';
-import { table } from '../../api/services/firstAPI';
+import { teams } from 'api';
 import Layout from '../../components/Layout/Layout';
 import { Table, Button, Actions, Space } from '@ebs-integrator/react-ebs-ui';
 import { useQuery, useQueryClient, useMutation } from 'react-query';
 import type { ColumnType } from '@ebs-integrator/react-ebs-ui/dist/components/organisms/Table/Table';
-import EditPostModal from './EditPostModal/EditPostModal';
+import EditPostModal from './EditTeamModal/EditTeamModal';
+import { TeamsProps } from 'types/teams';
+import { Results } from 'types/common';
+import Pagination from './Pagination/Pagination';
+import useFilters from 'hooks/filters';
+import { defaultFilters } from 'utils/filters';
 
-export interface TableProps {
-  id?: string;
-  createdAt?: string;
-  name: string;
-  profession: string;
-  page?: string;
-}
-
-const item: TableProps = {
+const item: TeamsProps = {
   name: '',
   profession: '',
 };
 
 const TeamsPage = () => {
   const queryClient = useQueryClient();
-  const [page, setPage] = useState(1);
-  const [edit, setEdit] = useState<TableProps | undefined>();
 
-  const { data } = useQuery<TableProps[]>(['repoData', page], () => table.getList(page));
+  const [edit, setEdit] = useState<TeamsProps | undefined>();
 
-  const deleteItem = useMutation((id: string) => table.deleteItem(id), {
+  const [filters, setFilters] = useFilters({ ...defaultFilters });
+
+  const { data } = useQuery<Results<TeamsProps>>(['teams', filters], () => teams.getList(filters));
+
+  const deleteItem = useMutation((id: string) => teams.remove(id), {
     onSuccess: () => {
-      queryClient.invalidateQueries('repoData');
+      queryClient.invalidateQueries('teams');
     },
   });
 
-  const columns: ColumnType<TableProps>[] = [
+  const columns: ColumnType<TeamsProps>[] = [
     {
       title: 'Name',
       dataIndex: 'name',
@@ -65,11 +64,11 @@ const TeamsPage = () => {
   ];
 
   const onClickNext = () => {
-    setPage(page + 1);
+    setFilters({ page: filters.page + 1 });
   };
 
   const onClickPrev = () => {
-    setPage(page - 1);
+    setFilters({ page: filters.page - 1 });
   };
 
   const onClose = () => setEdit(undefined);
@@ -85,16 +84,15 @@ const TeamsPage = () => {
           Create
         </Button>
       </Space>
-      <Table columns={columns} data={data} />
-      <Space className="mt-20" justify="space-between">
-        <Space className="ml-5">Page number: {page}</Space>
-        <Space>
-          <Button onClick={() => onClickPrev()} disabled={page === 1 ? true : false}>
-            Previous Page
-          </Button>
-          <Button onClick={() => onClickNext()}>Next Page</Button>
-        </Space>
-      </Space>
+      <Table columns={columns} data={data?.items} />
+
+      <Pagination
+        onClickNext={onClickNext}
+        onClickPrev={onClickPrev}
+        filters={filters}
+        count={data?.count}
+      />
+
       {!!edit && <EditPostModal edit={edit} onClose={onClose} />}
     </Layout>
   );

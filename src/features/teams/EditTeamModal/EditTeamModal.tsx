@@ -1,47 +1,43 @@
 import { Button, Modal, Space, Input, Form, useForm } from '@ebs-integrator/react-ebs-ui';
 import { useMutation, useQueryClient } from 'react-query';
-import { TableProps } from '../TeamsPage';
-import { table } from '../../../api/services/firstAPI';
+import { TeamsProps } from 'types/teams';
+import { teams } from 'api';
 
 interface ModalProps {
-  edit?: TableProps;
+  edit?: TeamsProps;
   onClose: () => void;
 }
 
-const EditPostModal: React.FC<ModalProps> = ({ edit, onClose }) => {
+const EditTeamModal: React.FC<ModalProps> = ({ edit, onClose }) => {
   const [form] = useForm();
   const queryClient = useQueryClient();
 
-  const addItem = useMutation<unknown, unknown, TableProps>(data => table.postItem(data), {
+  const addItem = useMutation<unknown, unknown, TeamsProps>(data => teams.add(data), {
     onSuccess: () => {
-      queryClient.invalidateQueries('repoData');
+      queryClient.invalidateQueries('teams');
       onClose();
     },
   });
 
-  const updateItem = useMutation<unknown, unknown, TableProps>(data => table.putItem(data), {
+  const updateItem = useMutation<unknown, unknown, TeamsProps>(data => teams.edit(data), {
     onSuccess: () => {
-      queryClient.invalidateQueries('repoData');
+      queryClient.invalidateQueries('teams');
       onClose();
     },
   });
 
-  const onSubmit = (data: TableProps) => {
+  const onSubmit = (data: TeamsProps) => {
     if (edit?.id) {
       updateItem.mutate({ ...edit, ...data });
-      console.log(table.putItem);
-      console.log(edit);
     } else {
       addItem.mutate(data);
-      console.log(table.postItem);
-      console.log(edit);
     }
   };
   return (
     <Modal onClose={onClose} title="Confirmă acceptare">
       <Modal.Content>
         <Form form={form} type="horizontal" initialValues={edit} onFinish={onSubmit}>
-          <Form.Field name="name" label="Name Surname">
+          <Form.Field name="name" label="Team name">
             <Input type="text" />
           </Form.Field>
 
@@ -64,4 +60,4 @@ const EditPostModal: React.FC<ModalProps> = ({ edit, onClose }) => {
     </Modal>
   );
 };
-export default EditPostModal;
+export default EditTeamModal;
