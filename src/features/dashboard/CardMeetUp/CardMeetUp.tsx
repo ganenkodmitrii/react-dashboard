@@ -1,4 +1,4 @@
-import { Icon } from '@ebs-integrator/react-ebs-ui';
+import { Icon } from 'ebs-design';
 import AvatarListPic from '../../../components/AvatarListPic/AvatarListPic';
 import { geolocation, calendar } from 'resources';
 

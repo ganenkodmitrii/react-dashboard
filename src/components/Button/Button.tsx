@@ -1,4 +1,4 @@
-import { Button as Btn } from '@ebs-integrator/react-ebs-ui';
+import { Button as Btn } from 'ebs-design';
 import React from 'react';
 
 interface StylesBtnProps {

@@ -1,4 +1,4 @@
-import { Layout as Container, InputSearch, Sidebar } from '@ebs-integrator/react-ebs-ui';
+import { Layout as Container, InputSearch, Sidebar } from 'ebs-design';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../../routes';
 
