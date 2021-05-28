@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { teams } from 'api';
 import Layout from '../../components/Layout/Layout';
-import { Table, Button, Actions, Space } from '@ebs-integrator/react-ebs-ui';
+import { Table, Button, Actions, Space } from 'ebs-design';
 import { useQuery, useQueryClient, useMutation } from 'react-query';
-import type { ColumnType } from '@ebs-integrator/react-ebs-ui/dist/components/organisms/Table/Table';
+import type { ColumnType } from 'ebs-design/dist/components/organisms/Table/Table';
 import EditPostModal from './EditTeamModal/EditTeamModal';
 import { TeamsProps } from 'types/teams';
 import { Results } from 'types/common';

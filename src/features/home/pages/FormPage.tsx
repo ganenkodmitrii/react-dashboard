@@ -1,14 +1,5 @@
 import Layout from '../../../components/Layout/Layout';
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Input,
-  Button,
-  Icon,
-  useForm,
-} from '@ebs-integrator/react-ebs-ui';
+import { Container, Row, Col, Form, Input, Button, Icon, useForm } from 'ebs-design';
 import { plusIcon, deleteIcon } from 'resources';
 import {
   FormRepeaterContext,

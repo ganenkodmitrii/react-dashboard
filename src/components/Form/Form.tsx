@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { question, facebook, github, mail, twitter } from 'resources';
-import { Form as Box, Icon, Input, Checkbox, Button, Space } from '@ebs-integrator/react-ebs-ui';
+import { Form as Box, Icon, Input, Checkbox, Button, Space } from 'ebs-design';
 
 const Form = () => {
   return (

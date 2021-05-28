@@ -1,5 +1,5 @@
 import { medal } from 'resources';
-import { Icon, Button } from '@ebs-integrator/react-ebs-ui';
+import { Icon, Button } from 'ebs-design';
 
 const CartPrize = () => {
   return (
