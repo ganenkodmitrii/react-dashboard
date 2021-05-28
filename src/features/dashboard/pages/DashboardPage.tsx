@@ -1,5 +1,5 @@
 import Layout from '../../../components/Layout/Layout';
-import { Container, Row, Col } from '@ebs-integrator/react-ebs-ui';
+import { Container, Row, Col } from 'ebs-design';
 import CardPrize from '../CardPrize/CardPrize';
 import Congrats from '../Congrats/Congrats';
 import Card from '../../../components/Card/Card';

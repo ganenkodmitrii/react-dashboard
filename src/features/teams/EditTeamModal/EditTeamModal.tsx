@@ -1,4 +1,4 @@
-import { Button, Modal, Space, Input, Form, useForm } from '@ebs-integrator/react-ebs-ui';
+import { Button, Modal, Space, Input, Form, useForm } from 'ebs-design';
 import { useMutation, useQueryClient } from 'react-query';
 import { TeamsProps } from 'types/teams';
 import { teams } from 'api';

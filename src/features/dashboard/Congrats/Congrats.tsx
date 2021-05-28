@@ -1,5 +1,5 @@
 import { flagLock } from '../../../resources/index';
-import { Icon } from '@ebs-integrator/react-ebs-ui';
+import { Icon } from 'ebs-design';
 import flag1 from '../../../resources/flag1.png';
 import flag2 from '../../../resources/flag2.png';
 

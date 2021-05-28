@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Button, Space } from '@ebs-integrator/react-ebs-ui';
+import { Button, Space } from 'ebs-design';
 import { Properties } from 'types/common';
 
 interface PaginationProps {
